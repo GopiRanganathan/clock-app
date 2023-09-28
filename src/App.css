@@ -1,38 +1,75 @@
-.App {
-  text-align: center;
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+  color:white;
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background-color:rgb(133, 12, 48);
+}
+.App{
+text-align:center;
+padding:25px;
+min-width:500px;
+}
+.App h2{
+  font-size:50px;
+  display:block;
+  margin-bottom:15px;
+}
+.length{
+  display:flex;
+  justify-content:space-between;
+  padding:10px;
+}
+.break{
+  padding:10px;
+}
+.break h4, .session h4{
+  display:block;
+  margin-bottom:15px;
+  font-size:23px;
+}
+.session{
+  padding:10px;
+}
+.break button, .session button, button{
+  padding:1px 20px;
+  border:none;
+  outline:none;
+  border-radius:5px;
+  font-size:15px;
+  background-color:rgb(88, 109, 109);
+}
+.break button:active, .session button:active, button:active{
+  background-color:rgb(241, 229, 152);
+  color:black;
+}
+.break h5, .session h5{
+  font-size:30px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.time{
+  padding:15px 5px;
+  border: 4px solid rgb(88, 109, 109);
+  border-radius:15px;
+  margin-bottom:10px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.time h3{
+  font-size:25px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.time h1{
+ font-size: 90px;
 }
-
-.App-link {
-  color: #61dafb;
+button{
+  padding:5px 10px;
+  margin:10px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.time-left{
+  color:rgb(251, 0, 0);
 }
